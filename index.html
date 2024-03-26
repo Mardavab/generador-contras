@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="X-UA-Compatible" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Generador de Contraseñas</title>
+</head>
+<body>
+    	<main class="main-card">
+            <h3>Password <span>Generator</span></h3>
+            <div class="input-copy">
+                <div class="password">
+                    <span id="pw-text">Zf0#vl3O_92C</span>
+                    <a href=""><img src="images/copyicon.png" alt=""></a>
+                </div>
+            </div>
+            <input id="range" type="range" min="4" max="20" step="1" onchange="showVal(this.value)">
+            <p class="display-pw-size">Password Size: <span>12</span></p>
+    
+            <div class="select-option">
+                <input type="checkbox" id="upper" checked/>
+                <label for="upper">Contain Uppercase Letters</label>
+            </div>
+            <div class="select-option">
+                <input type="checkbox" id="lower" checked/>
+                <label for="lower">Contain Lowercase Letters</label>
+            </div>
+            <div class="select-option">
+                <input type="checkbox" id="number" checked/>
+                <label for="number">Contain Numbers</label>
+            </div>
+            <div class="select-option">
+                <input type="checkbox" id="symbol" checked/>
+                <label for="symbol">Contain Symbols</label>
+            </div>
+            <button class="generate">
+                Generate
+            </button>
+        </main>
+        <script src="script.js"></script>
+</body>
+</html>
